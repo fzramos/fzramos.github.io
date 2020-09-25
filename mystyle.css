@@ -2,10 +2,13 @@
 html, body {
   margin:0;
   padding:0;
+  font-family: 'Open Sans';
+  font-size: 22px;
 }
 
 body {
     background-color: #696773;
+
 }
 
 h1 {
@@ -19,7 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-
+  margin-bottom: 7px;
 }
 
 #name-container {
@@ -63,11 +66,59 @@ header ul li a:hover {
   background-color: #aa2409;
 }
 
+/*For all of page info*/
+.page-info {
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-bottom: 15px;
+  margin-top: 8px;
+}
+
 /*For each main content block */
+.content-row {
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content-item {  
+  width:100%;
+  margin:7px;
+  padding:10px;
+  
+}
+
+.multi-items {
+  margin-left: 7px;
+  width: 100%;
+
+
+}
+.pair-item {
+
+  float: left;
+  width: 50%;
+  margin: auto;
+  margin-right: 7px;
+  background-color: #C6C7D2;
+
+  max-width:1500px;
+
+}
+
+.one-item {
+  background-color: #C6C7D2;
+  max-width: 1380px;
+
+}
+
+
+
 .content {
   margin:10px;
   padding:10px;
   background-color: #C6C7D2;
+
 }
 
 /*For Mini About Me seciton*/
@@ -79,34 +130,71 @@ header ul li a:hover {
 #face {
   float: left;
   margin-right:15px;
-  /*
-  width:
-  height:
-  */
 }
 
-#secret-div {
-  display: flex;
-  justify-content: space-between;
 
-
-}
 
 /*For Projects Section*/
-#projects {
+.figures {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, .5fr));
+}
 
-  flex-grow: 1;
-  resize: horizontal;
-  overflow: auto;
+figure {
+  width: 100%;
+  margin: 0 auto;
+}
+a img {
+  margin: 0;
+}
 
+#projects {
+  margin-bottom: 10px;
 }
 
 /*For Form*/
-form input[type="radio"] {
-  display: inline-block;    
-}
 textarea {
-  width: 248px;
+  width: 445px;
   height: 50px;
+  font-size:20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+legend {
+  font-size: 34px;
+}
+label {
+  font-size: 24px;
+
+}
+input{
+    font-size:20px;
+}
+
+div h2 {
+  font-size: 34px;
+  margin: 0px;
+}
+
+div ul {
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.rowz {
+  /*same as content-row*/
+  width:100%;
+  display: flex;
+  justify-content: center;
+  /*margin-left: 7px;
+  margin-right: 7px;
+  */
+  margin-top: 7px;
+  
+}
+
+.rowz-item {
+  margin: 0px 9px 0px 9px;
+  padding: 0px 50px 0px 25px;
+  background-color: #C6C7D2;
 }

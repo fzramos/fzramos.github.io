@@ -2,10 +2,12 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8" />
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>        
         <link rel="stylesheet" href="mystyle.css" />
         <title>Fred Ramos</title>
     </head>
     <body>
+
         <!--Header start -->
         <header>
             <div id="name-container">
@@ -13,105 +15,190 @@
             </div>
 
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="portfolio.html/#news">Portfolio</a></li>
-                <li><a href="portfolio.html/#contact">Skills</a></li>
-                <li><a href="portfolio.html/#about">About Me</a></li>
-                <li><a href="#contact" id="contact-button">Contact</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="portfolio.html/#news">PORTFOLIO</a></li>
+                <li><a href="portfolio.html/#contact">SKILLS</a></li>
+                <li><a href="portfolio.html/#about">ABOUT ME</a></li>
+                <li><a href="#contact" id="contact-button">CONTACT</a></li>
             </ul>
 
         </header>
         <!--Header end--> 
         
-        <!--Mini About Me Section Start-->
-        <div  class="content" id="about">
-            <h2><img id="face" src="images/face.jpg" alt="Picture of Fred Ramos" />Hello! I am a Chicago-based Software Developer with expertise in Python development and data science. I look forward to connecting with you!</h2>           
-        </div>
-        <!--Mini About Me Section End Start-->
-
-        <!--Preview Lists-->
-        <div id="secret-div">
-            <div class="content" id="projects">
-                <h2>My Projects<br /></h2>
-                <div id="projects" style="display:flex;">
-                    <figure>
-                        <a href="projects.html/#nyan">
-                            <img src="images/nyan.jpg" alt="Nyan Cat Project Image" style="width:75%">
-                        </a>
-                        <figcaption  style="width:75%"><a href="projects.html/#nyan">Nyan Cat FireFox Addon</a>: Adds Nyan Cat theme to YouTube videos.</figcaption>
-                    </figure>
-                    <figure>
-                        <a href="projects.html/#snake">
-                            <img src="images/snake.jpg" alt="Snake Game Project Image" style="width:75%">
-                        </a>
-                        <figcaption  style="width:75%"><a href="projects.html/#snake">Snake Game Python</a>: A GUI Snake Game made using Python and the library NumPy</figcaption>
-                    </figure>
-                    <figure>
-                        <a href="projects.html/#eeg">
-                            <img src="images/CodingPic3.jpg" alt="Cortical EEG Project Image" style="width:75%">
-                        </a>
-                    </figure>
+        <!--content of webpage-->
+        <div class="page-info">
+            <!--Mini About Me Section Start-->
+            <div  class="content-row" id="about">
+                <div class="content-item one-item">
+                    <h2><img id="face" src="images/face.jpg" alt="Picture of Fred Ramos" />Hello! I am a Chicago-based Software Developer with expertise in Python development and data science. I look forward to connecting with you!</h2>           
                 </div>
             </div>
-            <div id="secret-div" style="flex-direction: column;">
-                <div  class="content" id = "sidestuff">
-                    <div id="skills">
-                        <h2>My Top Proficiencies</h2>
-                        <ul>
-                            <li>Python Development</li>
-                            <li>Data Analysis and Visualization</li>
-                            <li>Team work</li>
-                            <li><a href="skills.html" target="_blank">See more</a></li>
-                        </ul>
+            <!--Mini About Me Section End Start-->
+
+            <!--Preview Lists-->
+            <div class="content-row">
+                <div class="content-item one-item">
+                    <h2 id="projects">My Projects</h2>
+                    <div class="figures">
+                        <figure>
+                            <a href="projects.html/#nyan">
+                                <img src="images/CodingPic3.jpg" alt="Nyan Cat Project Image" style="width:75%">
+                            </a>
+                            <figcaption  style="width:75%"><a href="projects.html/#nyan">Nyan Cat FireFox Addon</a>: Adds Nyan Cat theme to YouTube videos.</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="projects.html/#snake">
+                                <img src="images/CodingPic3.jpg" alt="Snake Game Project Image" style="width:75%">
+                            </a>
+                            <figcaption  style="width:75%"><a href="projects.html/#snake">Snake Game Python</a>: A GUI Snake Game made using Python and the library NumPy</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="projects.html/#eeg">
+                                <img src="images/CodingPic3.jpg" alt="Cortical EEG Project Image" style="width:75%">
+                            </a>
+                        </figure>
+    
                     </div>
-                    <div id="socials">
-                        <h2>Follow Me</h2>
-                        <ul>
-                            <li><a href="https://github.com/fzramos" target="_blank">Github</a></li>
-                            <li><a href="https://www.linkedin.com/in/framos6/" target="_blank">LinkedIn</a></li>
-                            <li><a href="https://stackoverflow.com/users/13445393/fzramos" target="_blank">Stack Overflow</a></li>
-                            <li><a href="https://twitter.com/FredRamosJr1" target="_blank">Twitter</a></li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
+
+
+
+
+
+            <div class="rowz">
+                <form class="rowz-item" action="http://www.example.com/review.php" method="get">
+                    <fieldset>
+                        <legend>
+                            <b>Contact:</b>
+                        </legend>
+                        <label>
+                            Name:
+                            <input type="text" name="name" size="38" maxlength="100">
+                        </label>
+                        <br />
+                        <label>
+                            Email: 
+                            <input type="email" name="email" size="39" maxlength="100">
+                        </label>
+                        <br />
+                        <label>
+                            Purpose of correspondence:
+                            <input type="radio" id="career" name="purpose" value="career">
+                            <label for="career">Career Inquiry</label><br>
+                            <input type="radio" id="question" name="purpose" value="question">
+                            <label for="question">Question</label><br>
+                            <input type="radio" id="other" name="purpose" value="other">
+                            <label for="other">Other</label>
+                        </label>
+                        <br />
+                        <textarea name="message" form="contact" placeholder="Enter message here.."></textarea>
+                        <br />
+                        <input type="submit" value="Submit message" />
+                    </fieldset>
+                </form>
+
+                <div class="rowz-item">
+                    <h2>My Top Proficiencies</h2>
+                    <ul>
+                        <li>Python Development</li>
+                        <li>Data Analysis and Visualization</li>
+                        <li>Team work</li>
+                        <li><a href="skills.html" target="_blank">See more</a></li>
+                    </ul>
+                </div>
+                <div class="rowz-item">
+                    <h2>Follow Me</h2>
+                    <ul>
+                        <li><a href="https://github.com/fzramos" target="_blank">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/framos6/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://stackoverflow.com/users/13445393/fzramos" target="_blank">Stack Overflow</a></li>
+                        <li><a href="https://twitter.com/FredRamosJr1" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+    
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+            <div class="content-row">   !--id="secret-div"--
+                <div class="multi-items">
+                    <div  class="pair-item"> !-- style="flex-grow: 1;"--
+                        <form id="contact" action="http://www.example.com/review.php" method="get">
+                            <fieldset>
+                                <legend>
+                                    Contact Form:
+                                </legend>
+                                <label>
+                                    Name:
+                                    <input type="text" name="name" size="30" maxlength="100">
+                                </label>
+                                <br />
+                                <label>
+                                    Email: 
+                                    <input type="email" name="email" size="30" maxlength="100">
+                                </label>
+                                <br />
+                                <label>
+                                    Purpose of correspondence:
+                                    <input type="radio" id="career" name="purpose" value="career">
+                                    <label for="career">Career Inquiry</label><br>
+                                    <input type="radio" id="question" name="purpose" value="question">
+                                    <label for="question">Question</label><br>
+                                    <input type="radio" id="other" name="purpose" value="other">
+                                    <label for="other">Other</label>
+                                </label>
+                                <br />
+                                <textarea name="message" form="contact" placeholder="Enter message here.."></textarea>
+                                <br />
+                                <input type="submit" value="Submit message" />
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <div  class="pair-item">
+                        <div id="skills">
+                            <h2>My Top Proficiencies</h2>
+                            <ul>
+                                <li>Python Development</li>
+                                <li>Data Analysis and Visualization</li>
+                                <li>Team work</li>
+                                <li><a href="skills.html" target="_blank">See more</a></li>
+                            </ul>
+                        </div>
+                        <div id="socials">
+                            <h2>Follow Me</h2>
+                            <ul>
+                                <li><a href="https://github.com/fzramos" target="_blank">Github</a></li>
+                                <li><a href="https://www.linkedin.com/in/framos6/" target="_blank">LinkedIn</a></li>
+                                <li><a href="https://stackoverflow.com/users/13445393/fzramos" target="_blank">Stack Overflow</a></li>
+                                <li><a href="https://twitter.com/FredRamosJr1" target="_blank">Twitter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+    
+                </div>
+
+
+            </div>
+-->
+
         </div>
 
-
-
-
-        <div  class="content">
-            <form id="contact" action="http://www.example.com/review.php" method="get">
-                <fieldset>
-                    <legend>
-                        Contact Form:
-                    </legend>
-                    <label>
-                        Name:
-                        <input type="text" name="name" size="30" maxlength="100">
-                    </label>
-                    <br />
-                    <label>
-                        Email: 
-                        <input type="email" name="email" size="30" maxlength="100">
-                    </label>
-                    <br />
-                    <!--<p>Please select your gender:</p>-->
-                    <label>
-                        Purpose of correspondence:
-                        <input type="radio" id="career" name="purpose" value="career">
-                        <label for="career">Career Inquiry</label><br>
-                        <input type="radio" id="question" name="purpose" value="question">
-                        <label for="question">Question</label><br>
-                        <input type="radio" id="other" name="purpose" value="other">
-                        <label for="other">Other</label>
-                    </label>
-                    <br />
-                    <textarea name="message" form="contact" placeholder="Enter message here.."></textarea>
-                    <br />
-                    <input type="submit" value="Submit review" />
-            </fieldset>
-        </div>
 
     </body>
 </html>
