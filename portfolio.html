@@ -1,15 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
-        <title>Most Basic</title>
+        <meta charset="utf-8" />
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'/>        
+        <link rel="stylesheet" href="mystyle.css">
+        <title>Fred Ramos</title>
     </head>
     <body>
-        <h1>This is a heading.</h1>
-        <p>This is a paragraph</p>
-        <p id="home">Home</p>
-        <p id="news">News</p>
-        <p id="contact">Contact<br /></p>
-        <p id="about">About<br /></p>
-        <p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
+
+        <!--Header start -->
+        <header>
+            <div id="name-container">
+                <h1>Fred Ramos Jr.</h1>
+            </div>
+
+            <ul>
+                <li><a href="index.html#">HOME</a></li>
+                <li><a id="current-page" href="portfolio.html#projects">PORTFOLIO</a></li>
+                <li><a href="portfolio#skills">SKILLS</a></li>
+                <li><a href="about.html">ABOUT ME</a></li>
+                <li><a href="index.html#contact" id="contact-button">CONTACT</a></li>
+            </ul>
+
+        </header>
+        <!--Header end--> 
+        
+        <!--content of webpage-->
+        <div class="page-info">
+            <div id="resume">
+                <h1 class=port-hs>Resume</h1>
+                <a id="download"href="Ramos,Fred_Resume2020.pdf" download>
+                    Download Link
+                </a>
+    
+            </div>
+            <div id="projects">
+                <div id="nyan">
+                    <h1 class="port-hs">Nyan Cat Firefox Youtube Enhancement</h1>
+                    <div  class="content-row" id="about">
+                        <div class="content-item one-item">
+                            <p><img id="face" src="images/CodingPic2.jpg" alt="Picture of Fred Ramos" />In this project I created a Firefox extension which added an animated Nyan Cat gif and a trailing rainbow to the time bar of Youtube videos. This addon currently published on the Firefox Add-ons website and curently has 165 active users and 503 downloads.<br />  
+                                <a href="https://addons.mozilla.org/en-US/firefox/addon/nyan-cat-youtube-enhancement/"><br/>Firefox Addon Link</a>
+                                <a href="https://github.com/fzramos/nyan-ff-addon"><br/><br/>Project Source Code</a>
+                            </p>                        
+                        </div>
+                    </div>
+                </div>
+                <div id="snake">
+                    <h1 class="port-hs">Snake Game GUI with Python</h1>
+                    <div  class="content-row" id="about">
+                        <div class="content-item one-item">
+                            <p><img id="face" src="images/CodingPic2.jpg" alt="Picture of Fred Ramos" />To build my Python skillset, I build a Snake Game utilizing Python 3 and the libraries NumPy and Tkinter.<br />  
+                                <a href="https://github.com/fzramos/Snake-Game-using-Numpy"><br/><br/>Project Source Code</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="eeg">
+                    <h1 class="port-hs">Cortical EEG Signatures of Multisensory Integration in the Pip & Pop Effect</h1>
+                    <div  class="content-row" id="about">
+                        <div class="content-item one-item">
+                            <p><img id="face" src="images/CodingPic2.jpg" alt="Picture of Fred Ramos" /><br />Project in which I utilized Matlab to analyze the brain activity of several sample subjects while they were listening to various sound tone frequencies.  This purpose of this project was to determine in what regions and in what way does the human brain's respond to listening to various frequencies of tone. The difference in Cortical EEG activity was quantified and presented.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="skills">
+                    <h1 class="port-hs">Skills</h1>
+                    <div  class="content-row" id="about">
+                        <div class="content-item one-item">
+                            <ul id="skill-list">
+                                <li>Python</li>
+                                <li>SQL</li>
+                                <li>SAS</li>
+                                <li>Data Analysis</li>
+                                <li>Matlab</li>
+                                <li>Web Development</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Back-End Development</li>
+                                <li>SAP</li>
+                                <li>Java</li>
+                                <li>JavaScript</li>
+                                <li>SQLite</li>
+                                <li>Pandas</li>
+                                <li>NumPy</li>
+                                <li>Git</li>
+                                <li>Anaconda</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

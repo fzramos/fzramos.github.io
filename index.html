@@ -15,10 +15,10 @@
             </div>
 
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="portfolio.html/#news">PORTFOLIO</a></li>
-                <li><a href="portfolio.html/#contact">SKILLS</a></li>
-                <li><a href="portfolio.html/#about">ABOUT ME</a></li>
+                <li><a id="current-page" href="#" style="background-color: #646F4B;">HOME</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="portfolio.html#skills">SKILLS</a></li>
+                <li><a href="about.html">ABOUT ME</a></li>
                 <li><a href="#contact" id="contact-button">CONTACT</a></li>
             </ul>
 
@@ -41,19 +41,19 @@
                     <h2 id="projects">My Projects</h2>
                     <div class="figures">
                         <figure>
-                            <a href="projects.html/#nyan">
+                            <a href="projects.html#nyan">
                                 <img src="images/CodingPic3.jpg" alt="Nyan Cat Project Image" style="width:75%">
                             </a>
-                            <figcaption  style="width:75%"><a href="projects.html/#nyan">Nyan Cat FireFox Addon</a>: Adds Nyan Cat theme to YouTube videos.</figcaption>
+                            <figcaption  style="width:75%"><a href="projects.html#nyan">Nyan Cat FireFox Addon</a>: Adds Nyan Cat theme to YouTube videos.</figcaption>
                         </figure>
                         <figure>
-                            <a href="projects.html/#snake">
+                            <a href="projects.html#snake">
                                 <img src="images/CodingPic3.jpg" alt="Snake Game Project Image" style="width:75%">
                             </a>
-                            <figcaption  style="width:75%"><a href="projects.html/#snake">Snake Game Python</a>: A GUI Snake Game made using Python and the library NumPy</figcaption>
+                            <figcaption  style="width:75%"><a href="projects.html#snake">Snake Game Python</a>: A GUI Snake Game made using Python and the library NumPy</figcaption>
                         </figure>
                         <figure>
-                            <a href="projects.html/#eeg">
+                            <a href="projects.html#eeg">
                                 <img src="images/CodingPic3.jpg" alt="Cortical EEG Project Image" style="width:75%">
                             </a>
                         </figure>
@@ -62,29 +62,24 @@
 
                 </div>
             </div>
-
-
-
-
-
             <div class="rowz">
-                <form class="rowz-item" action="http://www.example.com/review.php" method="get">
+                <form id="contact" class="rowz-item" action="http://www.example.com/review.php" method="get">
                     <fieldset>
                         <legend>
                             <b>Contact:</b>
                         </legend>
                         <label>
                             Name:
-                            <input type="text" name="name" size="38" maxlength="100">
+                            <input type="text" name="name" size="35" maxlength="100">
                         </label>
                         <br />
                         <label>
                             Email: 
-                            <input type="email" name="email" size="39" maxlength="100">
+                            <input type="email" name="email" size="36" maxlength="100">
                         </label>
                         <br />
                         <label>
-                            Purpose of correspondence:
+                            Purpose of correspondence:<br />
                             <input type="radio" id="career" name="purpose" value="career">
                             <label for="career">Career Inquiry</label><br>
                             <input type="radio" id="question" name="purpose" value="question">
@@ -117,88 +112,7 @@
                         <li><a href="https://twitter.com/FredRamosJr1" target="_blank">Twitter</a></li>
                     </ul>
                 </div>
-    
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-            <div class="content-row">   !--id="secret-div"--
-                <div class="multi-items">
-                    <div  class="pair-item"> !-- style="flex-grow: 1;"--
-                        <form id="contact" action="http://www.example.com/review.php" method="get">
-                            <fieldset>
-                                <legend>
-                                    Contact Form:
-                                </legend>
-                                <label>
-                                    Name:
-                                    <input type="text" name="name" size="30" maxlength="100">
-                                </label>
-                                <br />
-                                <label>
-                                    Email: 
-                                    <input type="email" name="email" size="30" maxlength="100">
-                                </label>
-                                <br />
-                                <label>
-                                    Purpose of correspondence:
-                                    <input type="radio" id="career" name="purpose" value="career">
-                                    <label for="career">Career Inquiry</label><br>
-                                    <input type="radio" id="question" name="purpose" value="question">
-                                    <label for="question">Question</label><br>
-                                    <input type="radio" id="other" name="purpose" value="other">
-                                    <label for="other">Other</label>
-                                </label>
-                                <br />
-                                <textarea name="message" form="contact" placeholder="Enter message here.."></textarea>
-                                <br />
-                                <input type="submit" value="Submit message" />
-                            </fieldset>
-                        </form>
-                    </div>
-
-                    <div  class="pair-item">
-                        <div id="skills">
-                            <h2>My Top Proficiencies</h2>
-                            <ul>
-                                <li>Python Development</li>
-                                <li>Data Analysis and Visualization</li>
-                                <li>Team work</li>
-                                <li><a href="skills.html" target="_blank">See more</a></li>
-                            </ul>
-                        </div>
-                        <div id="socials">
-                            <h2>Follow Me</h2>
-                            <ul>
-                                <li><a href="https://github.com/fzramos" target="_blank">Github</a></li>
-                                <li><a href="https://www.linkedin.com/in/framos6/" target="_blank">LinkedIn</a></li>
-                                <li><a href="https://stackoverflow.com/users/13445393/fzramos" target="_blank">Stack Overflow</a></li>
-                                <li><a href="https://twitter.com/FredRamosJr1" target="_blank">Twitter</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-    
-                </div>
-
-
-            </div>
--->
-
         </div>
-
-
     </body>
 </html>
